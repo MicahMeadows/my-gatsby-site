@@ -1,5 +1,5 @@
 import * as React from 'react'
-import { Link, HeadFC } from "gatsby";
+import { HeadFC } from "gatsby";
 import Layout from '../components/layout';
 import { StaticImage } from 'gatsby-plugin-image';
 import Seo from '../components/seo';
