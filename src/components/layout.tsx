@@ -2,11 +2,12 @@ import * as React from "react";
 import { Link, useStaticQuery, graphql } from 'gatsby';
 import { siteTitle, container, heading, navLinks, navLinkItem, navLinkText } from './layout.module.css';
 
-interface Props {
+type Props = {
     pageTitle: string,
-    children?: JSX.Element[],
+    children: React.ReactNode,
 }
-const Layout = ({ pageTitle, children }: Props) => {
+
+const Layout : React.FC<Props> = ({ pageTitle, children }) => {
     const data = useStaticQuery(graphql`
         query MyQuery {
             site {
